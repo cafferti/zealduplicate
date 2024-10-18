@@ -2,15 +2,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faLinkedin, faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { Oval } from 'react-loader-spinner';
+
 
 
 function Footer() {
   return (
     <footer className='border-t  mt-6'>
+
     <h1 className=' text py-8 px-8 text-center text-[17px] font-forumSerif text-2xl pb-8 cursor-pointer' >Popular Location</h1>
     <section className='bg-[#0d4d4d] text-center py-12 text-white md:flex md:items-center md:gap-4 md:center sm:px-[1%] md:justify-around'>
       <div className='md:text-right'>
         <h1 className='leading-tight text-2xl  mb-1 font-forumSerif'> Sign up to our  newsletter</h1>
+        
         <h2 className='tracking-tight leading-tight pb-4 mb-4  font-[17px]'> stay up to date with latest news</h2>
 
       </div>
@@ -26,7 +30,22 @@ function Footer() {
       </div>
     </section>
     <div className='bg-[#003333] md:text-left text-center py-5 md:grid lg:grid-cols-5 sm:grid-cols-4'>
-      <img className='w-[50%] mx-auto md:hidden' src='https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/logos/2022/08/20/0d604b5a-79f0-4f94-91de-96ba4aab2d7e.png' alt="" />
+      <img className='w-[50%] mx-auto hidden' src='https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/logos/2022/08/20/0d604b5a-79f0-4f94-91de-96ba4aab2d7e.png' alt="" />
+      <div className='w-[50%] mx-auto md:hidden text-white text-2xl opacity-80' >Zeal Real Estate </div>
+
+      <div className=' absolute right-0  text-white text-center mx-[5%]'>
+        <Oval
+          height={60}
+          width={60}
+          color="#3498db"
+          ariaLabel="oval-loading"
+          secondaryColor="#f3f3f3"
+          strokeWidth={2}
+          strokeWidthSecondary={2}
+          visible={true}
+        />
+        <h1 className='text-[8px] font-forumSerif mt-[-2rem] opacity-70'>SAULLTECH</h1>
+      </div>
 
       <div className='text-white py-6 border-b md:border-none  sm:mx-[10%]'>
         <h1 className='tracking-tight font-bold text-lg '>Menu</h1>
