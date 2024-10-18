@@ -4,6 +4,7 @@ import saulltechclose from './assets/Close_MD.svg'
 import saulltechprofile from './assets/profile.svg'
 import Flag from 'react-world-flags';
 import { useState, useEffect } from 'react'
+import { NavLink } from 'react-router-dom';
 
 
 function Nav() {
@@ -44,13 +45,13 @@ function Nav() {
         <img className="w-[50%] sm:w-[40%] md:w-[15%]  h-[50%]" src='https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/logos/2022/08/17/34f7a0a9-8d33-4345-93ff-699c5611dfa4.png' alt="" />
 
         <div className=' text-white w- text-[10px] transition-all  justify-between mt-2 hidden md:flex w-[60%]'>
-          <a className='block  opacity-90' href="">Buy</a>
-          <a className='block opacity-90' href="">Rent</a>
-          <a className=' block  opacity-90' href="">New Builds </a>
-          <a className='block opacity-90' href="">Valuation</a>
-          <a className='block  opacity-90' href="">About</a>
-          <a className='block opacity-90' href="">News</a>
-          <a className='block opacity-90' href="">Contact </a>
+          <NavLink to='/buy?' className='block  opacity-90'>Buy</NavLink>
+          <NavLink to='/rent?' className='block opacity-90'>Rent</NavLink>
+          <NavLink to='/newbuilds?' className=' block  opacity-90'>New Builds </NavLink>
+          <NavLink to='/valuation?' className='block opacity-90'>Valuation</NavLink>
+          <NavLink to='/about?' className='block  opacity-90'>About</NavLink>
+          <NavLink to='/news?' className='block opacity-90'>News</NavLink>
+          <a href='contactus' className='block opacity-90'>Contact </a>
           <div className='w-[2rem] rounded-[50%] opacity-90 '>
             <Flag className=' w-[100%] rounded-[10rem]' code="NG" height="50" width="50" />
           </div>
@@ -65,13 +66,13 @@ function Nav() {
       </nav>
 
       <div className={`bg-[#003333] text-white absolute w-[100%] px-[5%] text-lg md:hidden  ${navmonitor2} `}>
-        <a className='block py-2 opacity-70' href="">Buy</a>
-        <a className='block py-2  opacity-70' href="">Rent</a>
-        <a className=' block py-2 opacity-70' href="">New Builds </a>
-        <a className='block py-2 opacity-70' href="">Valuation</a>
-        <a className='block py-2 opacity-70' href="">About</a>
-        <a className='block py-2 opacity-70' href="">News</a>
-        <a className='block py-2 opacity-70' href="">Contact </a>
+        <NavLink to='/buy?' className='block py-2 opacity-70'>Buy</NavLink>
+        <NavLink to='/rent?' className='block py-2  opacity-70'>Rent</NavLink>
+        <NavLink to='/newbuilds?' className=' block py-2 opacity-70'>New Builds </NavLink>
+        <NavLink to='/valuation?' className='block py-2 opacity-70'>Valuation</NavLink>
+        <NavLink to='/about?' className='block py-2 opacity-70'>About</NavLink>
+        <NavLink to='/news?' className='block py-2 opacity-70' >News</NavLink>
+        <a href='#contactus' className='block py-2 opacity-70'>Contact </a>
         <div className='w-[4rem] rounded-[50%] opacity-90 pt-[1rem]'>
           <Flag className=' w-[100%] rounded-[10rem]' code="NG" height="50" width="50" />
         </div>

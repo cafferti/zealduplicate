@@ -10,11 +10,11 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import saulltecharrowback from './assets/Frame 155 (1).svg'
 import saulltecharrowfront from './assets/frameack.svg'
 import { faBed, faBath, faStar, } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-regular-svg-icons/faHeart'
 import { Oval } from 'react-loader-spinner';
 import zeallogo from './assets/zeallogo.jpeg'
+import { NavLink } from 'react-router-dom'
 
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import 'swiper/swiper.css'; // Import Swiper styles
@@ -166,27 +166,27 @@ function Nav() {
       </div>
       <main className=" h-screen pb-[15%] bg-center bg-cover w-[100%] bg-[url('https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/slides/2023/10/25/696c44fa-082c-414c-9222-a211b2f6bc83.jpg')]">
         <nav className={`flex justify-between px-[5%] sm:px-[3%] sm:pr-0  py-[1rem] items-center bg sm:py-[1rem] md:pt-0 md:pr-[5%] ${navmonitor}`}>
-          {/* <img className="w-[50%] sm:w-[30%] lg:w-[15%] h-[50%] md:w-[15%] md:pt-1" src='https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/logos/2022/08/17/34f7a0a9-8d33-4345-93ff-699c5611dfa4.png' alt="" /> */}
-          <img className="w-[50%] sm:w-[30%] lg:w-[15%] h-[50%] md:w-[15%] md:pt-1" src={zeallogo} alt="" />
+          <img className="w-[50%] sm:w-[30%] lg:w-[15%] h-[50%] md:w-[15%] md:pt-1" src='https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/logos/2022/08/17/34f7a0a9-8d33-4345-93ff-699c5611dfa4.png' alt="" />
+          <img className="w-[50%] sm:w-[30%] lg:w-[15%] h-[50%] md:w-[15%] md:pt-1 hidden" src={zeallogo} alt="" />
 
 
 
           <div className='  w-[35%]  md:w-[60%]  transition-all '>
             <div className='flex items-center justify-end md:border-b md:py-1'>
               <a className='w-fit md:flex items-center md:mr-[]' href="mailto:zealrealestate@gmail.com"> <img className='md:w-[12%] text-white w-[70%] sm:w-[55%] opacity-70' src={saulltechimg} alt="" /> <p className='text-white px-1 hidden md:block text-[60%] opacity-80' >Zealrealestate@gmail.com</p> </a>
-              <a className='md:flex items-center justify-end' href=""> <img className=' w-[70%] sm:w-[55%] md:w-[12%] opacity-70' src={saulltechphone} alt="" /> <p className="text-white px-1 hidden md:block text-[60%] opacity-80">0813812988</p> </a>
+              <a className='md:flex items-center justify-end' href="tel:+2348138129988"> <img className=' w-[70%] sm:w-[55%] md:w-[12%] opacity-70' src={saulltechphone} alt="" /> <p className="text-white px-1 hidden md:block text-[60%] opacity-80">0813812988</p> </a>
               <img onClick={togglenav} className='opacity-70 w-[30%] sm:w-[15%] md:hidden' src={navmonitor === '' ? saulltechmenu : saulltechclose} alt="" />
             </div>
 
 
             <div className=' text-white w-[100%] text-[10px]  justify-between mt-2 hidden md:flex '>
-              <a className='block  opacity-90' href="">Buy</a>
-              <a className='block opacity-90' href="">Rent</a>
-              <a className=' block  opacity-90' href="">New Builds </a>
-              <a className='block opacity-90' href="">Valuation</a>
-              <a className='block  opacity-90' href="">About</a>
-              <a className='block opacity-90' href="">News</a>
-              <a className='block opacity-90' href="">Contact </a>
+              <NavLink to='/buy?' className='block  opacity-90'>Buy</NavLink>
+              <NavLink to='/rent?' className='block opacity-90'>Rent</NavLink>
+              <NavLink to='/newbuilds?' className=' block  opacity-90'>New Builds </NavLink>
+              <NavLink to='/valuation?' className='block opacity-90'>Valuation</NavLink>
+              <NavLink to='/about?' className='block  opacity-90'>About</NavLink>
+              <NavLink to='/news?' className='block opacity-90'>News</NavLink>
+              <a href='#contactus' className='block opacity-90'>Contact </a>
               <div className='w-[2rem] rounded-[50%] opacity-90 '>
                 <Flag className=' w-[100%] rounded-[10rem]' code="NG" height="50" width="50" />
               </div>
@@ -199,13 +199,13 @@ function Nav() {
         </nav>
 
         <div className={`bg-[#003333] text-white absolute w-[100%] px-[5%] text-lg md:hidden  ${navmonitor2}`}>
-          <a className='block py-2 opacity-70' href="">Buy</a>
-          <a className='block py-2  opacity-70' href="">Rent</a>
-          <a className=' block py-2 opacity-70' href="">New Builds </a>
-          <a className='block py-2 opacity-70' href="">Valuation</a>
-          <a className='block py-2 opacity-70' href="">About</a>
-          <a className='block py-2 opacity-70' href="">News</a>
-          <a className='block py-2 opacity-70' href="">Contact </a>
+          <NavLink to='/buy?' className='block py-2 opacity-70'>Buy</NavLink>
+          <NavLink to='/rent?' className='block py-2  opacity-70'>Rent</NavLink>
+          <NavLink to='/newbuilds?' className=' block py-2 opacity-70'>New Builds </NavLink>
+          <NavLink to='/valuation?' className='block py-2 opacity-70'>Valuation</NavLink>
+          <NavLink to='/about?' className='block py-2 opacity-70'>About</NavLink>
+          <NavLink to='/news?' className='block py-2 opacity-70' >News</NavLink>
+          <a href='#contactus' className='block py-2 opacity-70'>Contact </a>
           <div className='w-[4rem] rounded-[50%] opacity-90 pt-[1rem]'>
             <Flag className=' w-[100%] rounded-[10rem]' code="NG" height="50" width="50" />
           </div>
@@ -221,10 +221,10 @@ function Nav() {
           <h1 className='border-b-[1px] py-6 md:w-[30rem] mt-[20%] sm:mt-0 mx-[auto] font-forumSerif  text-[1.4rem]  tracking-wider md:text-[2rem] md:font-thin'>Zeal Real Estate And Interiors.....</h1>
 
           <div className=" mx-[10%] grid grid-cols-1 gap-[2rem] sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-4 gap-x-4 gap-y-7  items-center md:items-start md:max-w-[50rem] pt-[1rem] md:mx-auto">
-            <a className='bg-[#aa3939] w-full whitespace-nowrap text-sm md:text-base text-center tracking-wide font-bold uppercase rounded-lg block transition-all py-3 cta md:px-6' href="">FOR SALE</a>
-            <a className='bg-[#aa3939] w-full whitespace-nowrap text-sm md:text-base text-center tracking-wide font-bold uppercase rounded-lg block transition-all py-3 cta md:px-6 ' href="">FOR RENT</a>
-            <a className='bg-[#aa3939] w-full whitespace-nowrap text-sm md:text-base text-center tracking-wide font-bold uppercase rounded-lg block transition-all py-3 cta md:px-6 ' href="">VALUATION</a>
-            <a className='bg-[#aa3939] w-full whitespace-nowrap text-sm md:text-base text-center tracking-wide font-bold uppercase rounded-lg block transition-all py-3 cta md:px-6 ' href="">CONTACT US</a>
+            <NavLink to='/buy?' className='bg-[#aa3939] w-full whitespace-nowrap text-sm md:text-base text-center tracking-wide font-bold uppercase rounded-lg block transition-all py-3 cta md:px-6'>FOR SALE</NavLink>
+            < NavLink to='/rent?' className='bg-[#aa3939] w-full whitespace-nowrap text-sm md:text-base text-center tracking-wide font-bold uppercase rounded-lg block transition-all py-3 cta md:px-6 ' >FOR RENT</NavLink>
+            <NavLink to='/contacts?' className='bg-[#aa3939] w-full whitespace-nowrap text-sm md:text-base text-center tracking-wide font-bold uppercase rounded-lg block transition-all py-3 cta md:px-6 '>TEAM</NavLink>
+            < a href='#contactus' className='bg-[#aa3939] w-full whitespace-nowrap text-sm md:text-base text-center tracking-wide font-bold uppercase rounded-lg block transition-all py-3 cta md:px-6 '>CONTACT US</a>
 
           </div>
         </div>
@@ -288,7 +288,7 @@ function Nav() {
               )}
             </div>
 
-            <h1 className=' leading-tight font-forumSerif uppercase font-bold text-xl line-clamp-1 py-2 opacity-80' >£285,000</h1>
+            <h1 className=' leading-tight font-forumSerif uppercase font-bold text-xl line-clamp-1 py-2 opacity-80' >₦285,000</h1>
             <h2 className='text-lg my-1'>Upgraded New Build</h2>
             <p className='tracking-tight text-sm'> Hartelpool,Tennesee, Unites kingdom </p>
             <div className="bed flex gap-2  py-[1rem] ">
@@ -346,7 +346,7 @@ function Nav() {
               )}
             </div>
 
-            <h1 className=' font-forumSerif leading-tight uppercase font-bold text-xl line-clamp-1 py-2 opacity-80' >£285,000</h1>
+            <h1 className=' font-forumSerif leading-tight uppercase font-bold text-xl line-clamp-1 py-2 opacity-80' >₦285,000</h1>
             <h2 className='text-lg my-1'>Upgraded New Build</h2>
             <p className='tracking-tight text-sm'> Hartelpool,Tennesee, Unites kingdom </p>
             <div className="bed flex gap-2  py-[1rem] ">
@@ -406,7 +406,7 @@ function Nav() {
               )}
             </div>
 
-            <h1 className=' font-forumSerif leading-tight uppercase font-bold text-xl line-clamp-1 py-2 opacity-80' >£285,000</h1>
+            <h1 className=' font-forumSerif leading-tight uppercase font-bold text-xl line-clamp-1 py-2 opacity-80' >₦285,000</h1>
             <h2 className='text-lg my-1'>Upgraded New Build</h2>
             <p className='tracking-tight text-sm'> Hartelpool,Tennesee, Unites kingdom </p>
             <div className="bed flex gap-2  py-[1rem] ">
@@ -469,7 +469,7 @@ function Nav() {
               )}
             </div>
 
-            <h1 className='font-forumSerif leading-tight uppercase font-bold text-xl line-clamp-1 py-2 opacity-80' >£285,000</h1>
+            <h1 className='font-forumSerif leading-tight uppercase font-bold text-xl line-clamp-1 py-2 opacity-80' >₦285,000</h1>
             <h2 className='text-lg my-1'>Upgraded New Build</h2>
             <p className='tracking-tight text-sm'> Hartelpool,Tennesee, Unites kingdom </p>
             <div className="bed flex gap-2  py-[1rem] ">
@@ -512,9 +512,9 @@ function Nav() {
           <div className="saleproperties h-[23rem] sm:h-[20rem] group overflow-hidden relative rounded-lg bg-cover bg-center  bg-[url('https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/popular-searches/2023/10/25/54039769-6f25-4ff2-b365-95b778887c85.jpg')]">
             <div className='bg-[rgba(0,0,0,0.4)] hover:bg-[rgba(34,102,102,0.85)] h-[100%] px-8 pt-[12rem] sm:pt-[10rem] rounded-xl transition-all duration-150'>
               <h1 className='text-[1.5rem] mb-[2rem] opacity-80  group-hover:sm:mt-[0px] sm:mt-[2rem] transition-all duration-700'>Sale Properties</h1>
-              <a className='  hover:bg-white hover:text-black hover:opacity-75 transition-all duration-700 border rounded-lg py-2 px-5 uppercase block w-fit sm:absolute sm:bottom-[-3rem] group-hover:sm:bottom-[2rem]'>
+              <NavLink to='/buy' className='  hover:bg-white hover:text-black hover:opacity-75 transition-all duration-700 border rounded-lg py-2 px-5 uppercase block w-fit sm:absolute sm:bottom-[-3rem] group-hover:sm:bottom-[2rem]'>
                 View More
-              </a>
+              </NavLink>
             </div>
           </div>
           {/* singlecard */}
@@ -522,9 +522,9 @@ function Nav() {
           <div className="saleproperties h-[23rem] sm:h-[20rem] group overflow-hidden relative rounded-lg bg-cover bg-center  bg-[url('https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/popular-searches/2023/10/25/b93972d2-a109-4e06-b045-8c10111f88fe.jpg')]">
             <div className='bg-[rgba(0,0,0,0.4)] hover:bg-[rgba(34,102,102,0.85)] h-[100%] px-8 pt-[12rem]  sm:pt-[10rem] rounded-xl transition-all duration-150'>
               <h1 className='text-[1.5rem] mb-[2rem] opacity-80  group-hover:sm:mt-[0px] sm:mt-[2rem] transition-all duration-700'>Meet the Team</h1>
-              <a className='  hover:bg-white hover:text-black hover:opacity-75 transition-all duration-700 border rounded-lg py-2 px-5 uppercase block w-fit sm:absolute sm:bottom-[-3rem] group-hover:sm:bottom-[2rem]'>
+              <NavLink to='/contacts' className='  hover:bg-white hover:text-black hover:opacity-75 transition-all duration-700 border rounded-lg py-2 px-5 uppercase block w-fit sm:absolute sm:bottom-[-3rem] group-hover:sm:bottom-[2rem]'>
                 View More
-              </a>
+              </NavLink>
             </div>
           </div>
           {/* singlecard */}
@@ -761,92 +761,7 @@ function Nav() {
         </Swiper>
       </div>
 
-      <footer className='border-t  mt-6'>
-        <h1 className=' text py-8 px-8 text-center text-[17px] font-forumSerif text-2xl pb-8 cursor-pointer' >Popular Location</h1>
-        <section className='bg-[#0d4d4d] text-center py-12 text-white md:flex md:items-center md:gap-4 md:center sm:px-[1%] md:justify-around'>
-          <div className='md:text-right'>
-            <h1 className='leading-tight text-2xl  mb-1 font-forumSerif'> Sign up to our  newsletter</h1>
-            <h2 className='tracking-tight leading-tight pb-4 mb-4  font-[17px]'> stay up to date with latest news</h2>
 
-          </div>
-          <div className='md:flex md:gap-6'>
-            <input className=' w-[90%] rounded-lg text-sm px-4 border-2 h-11 mb-4 border-gray-50 ' type="text" placeholder='Fullname' />
-            <div className='flex justify-between items-center md:w-[150%]  w-[90%] text bg-white mx-auto px-4 pr-1 border-2 h-11 mb-4 border-gray-50 rounded-lg'>
-              <input className='w-[90%] mx-auto' type="text" placeholder='Enter Email' />
-              <button className='bg-[#aa3939] rounded-lg transition-all tracking-wide uppercase font-bold text-sm px-4 h-9'>
-                signup
-              </button>
-            </div>
-
-          </div>
-        </section>
-        <div className='bg-[#003333] md:text-left text-center py-5 md:grid lg:grid-cols-5 sm:grid-cols-4'>
-          <img className='w-[50%] mx-auto md:hidden' src='https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/logos/2022/08/20/0d604b5a-79f0-4f94-91de-96ba4aab2d7e.png' alt="" />
-
-          <div className='text-white py-6 border-b md:border-none  sm:mx-[10%]'>
-            <h1 className='tracking-tight font-bold text-lg '>Menu</h1>
-            <div className='mt-3 '>
-              <a className='text-[17px] opacity-90 block' href="">Buy properties</a>
-              <a className='text-[17px] opacity-90 block' href=""> About Us</a>
-              <a className='text-[17px] opacity-90 block' href="">Meet The Team</a>
-              <a className='text-[17px] opacity-90 block' href="">Testimonial</a>
-              <a className='text-[17px] opacity-90 block' href="">News</a>
-              <a className='text-[17px] opacity-90 block' href="">Contact Us</a>
-            </div>
-          </div>
-
-          <div className='text-white py-6 border-b md:border-none  sm:mx-[10%]'>
-            <h1 className='tracking-tight font-bold text-lg'>Socials</h1>
-            <div className='mt-3'>
-              <a className='text-[17px] opacity-90 block' href="https://www.facebook.com/profile.php?id=61554711257755&mibextid=LQQJ4d">Facebook</a>
-              <a className='text-[17px] opacity-90 block' href=""> LinkedIn</a>
-              <a className='text-[17px] opacity-90 block' href="https://www.instagram.com/zeal_real_estate_and_interior_?igsh=OGQ5ZDc2ODk2ZA==">Instagram</a>
-
-            </div>
-          </div>
-
-
-          <div className='text-white py-6 border-b md:border-none  sm:mx-[10%]'>
-            <h1 className='tracking-tight font-bold text-lg'>Company</h1>
-            <div className='mt-3'>
-              <a className='text-[17px] opacity-90 block' href="">Privacy Policy</a>
-              <a className='text-[17px] opacity-90 block' href=""> Terms and Condition</a>
-            </div>
-          </div>
-
-          <div className='text-white py-6 border-b md:border-none  sm:mx-[10%]'>
-            <h1 className='tracking-tight font-bold text-lg'>Get In Touch</h1>
-            <div className='mt-3'>
-              <a className='text-[17px] opacity-90 block' href="">+234(8138129988)</a>
-              <a className='text-[17px] opacity-90 block' href="mailto:zealrealestate@gmail.com">Zealrealestate@gmail</a>
-            </div>
-          </div>
-
-          <div className='text-white py-6   sm:mx-[10%]'>
-            <h1 className='tracking-tight font-bold text-lg'>Resources</h1>
-            <div className='mt-3'>
-              <a className='text-[17px] opacity-90 block' href="">Download Our  Free Guide</a>
-              <a className='text-[17px] opacity-90 block' href=""> Area Guide</a>
-            </div>
-          </div>
-
-        </div>
-        <div className='py-5 bg-[#003333] text-center border-t'>
-          <a href=""><FontAwesomeIcon icon={faLinkedin} className="text-xl px-2 text-white opacity-90" />
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=61554711257755&mibextid=LQQJ4d"><FontAwesomeIcon icon={faFacebook} className="text-xl px-2 text-white opacity-90" />
-          </a>
-          <a href="https://www.instagram.com/zeal_real_estate_and_interior_?igsh=OGQ5ZDc2ODk2ZA=="><FontAwesomeIcon icon={faInstagram} className="text-xl px-2 text-white opacity-90" />
-          </a>
-          <a href=""><FontAwesomeIcon icon={faTwitter} className="text-xl px-2 text-white opacity-90" />
-          </a>
-          <p className='text-white pt-7 opacity-70'>
-            Copyright Discover 2024. All rights reserved.
-          </p>
-        </div>
-
-
-      </footer>
 
 
 
