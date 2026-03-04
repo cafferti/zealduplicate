@@ -14,7 +14,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-regular-svg-icons/faHeart'
 import zeallogo from './assets/zeallogo.jpeg'
 import zeallogo1 from './assets/Zeallogo2.png'
-import zeallogo2 from './assets/zeallogo2.jpeg'
 import { NavLink } from 'react-router-dom'
 
 // import { Swiper, SwiperSlide } from 'swiper/react';
