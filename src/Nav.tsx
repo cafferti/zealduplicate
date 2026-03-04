@@ -5,6 +5,8 @@ import saulltechprofile from './assets/profile.svg'
 import Flag from 'react-world-flags';
 import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
+import zeallogo1 from './assets/Zeallogo1.png'
+
 
 
 function Nav() {
@@ -42,7 +44,7 @@ function Nav() {
   return (
     <main className={`${showNavOnScroll ? 'fixed top-0 w-full z-50 visiblenav' : 'hiddennav absolute'} tarsition-all`}>
       <nav className={` flex justify-between px-[5%] py-[0.2rem] items-center bg bg-[#003333]`}>
-      <h1 className='text-white text-xl opacity-70'>Zeal Real Estate</h1>
+      <img src={zeallogo1} className='w-[10%] my-0 py-0 inline block' alt="" />
 
         <img className="w-[50%] sm:w-[40%] md:w-[15%] hidden  h-[50%]" src='https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/logos/2022/08/17/34f7a0a9-8d33-4345-93ff-699c5611dfa4.png' alt="" />
 

@@ -13,6 +13,8 @@ import { faBed, faBath, faStar, } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-regular-svg-icons/faHeart'
 import zeallogo from './assets/zeallogo.jpeg'
+import zeallogo1 from './assets/Zeallogo2.png'
+import zeallogo2 from './assets/zeallogo2.jpeg'
 import { NavLink } from 'react-router-dom'
 
 // import { Swiper, SwiperSlide } from 'swiper/react';
@@ -151,7 +153,7 @@ function Nav() {
   return (
     <div className="landing relative">
       <div className=' absolute top-[6rem] right-0  text-white text-center mx-[5%]'>
-        <img className='w-[50%] inline-block ml-[50%]' src={zeallogo} alt="" />
+        
         {/* <Oval
           height={60}
           width={60}
@@ -168,7 +170,7 @@ function Nav() {
         <nav className={`flex justify-between px-[5%] sm:px-[3%] sm:pr-0  py-[1rem] items-center bg sm:py-[1rem] md:pt-0 md:pr-[5%] ${navmonitor}`}>
           <img className="w-[50%] sm:w-[30%] lg:w-[15%] h-[50%] md:w-[15%] md:pt-1 hidden" src='https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/logos/2022/08/17/34f7a0a9-8d33-4345-93ff-699c5611dfa4.png' alt="" />
           <img className="w-[50%] sm:w-[30%] lg:w-[15%] h-[50%] md:w-[15%] md:pt-1 hidden" src={zeallogo} alt="" />
-          <h1 className='text-white text-xl opacity-70'>Zeal Real Estate</h1>
+      <img className='opacity-50 w-[10%]' src={zeallogo1} alt="" />
 
 
 
@@ -219,7 +221,7 @@ function Nav() {
 
 
         <div className='text-white text-center first-line: sm:h-[100%] sm:py-[5%]'>
-          <h1 className='border-b-[1px] py-6 md:w-[30rem] mt-[20%] sm:mt-0 mx-[auto] font-forumSerif  text-[1.4rem]  tracking-wider md:text-[2rem] md:font-thin'>Zeal Real Estate And Interiors.....</h1>
+          <h1 className='border-b-[1px] py-6 md:w-[30rem] mt-[20%] sm:mt-0 mx-[auto] font-forumSerif  text-[1.4rem]  tracking-wider md:text-[2rem] md:font-thin'>Zeal Real Estate Company Ltd.....</h1>
 
           <div className=" mx-[10%] grid grid-cols-1 gap-[2rem] sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-4 gap-x-4 gap-y-7  items-center md:items-start md:max-w-[50rem] pt-[1rem] md:mx-auto">
             <NavLink to='/buy?' className='bg-[#aa3939] w-full whitespace-nowrap text-sm md:text-base text-center tracking-wide font-bold uppercase rounded-lg block transition-all py-3 cta md:px-6'>FOR SALE</NavLink>
