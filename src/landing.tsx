@@ -12,7 +12,7 @@ import saulltecharrowfront from './assets/frameack.svg'
 import { faBed, faBath, faStar, } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-regular-svg-icons/faHeart'
-import zeallogo from './assets/zeallogo.jpeg'
+import zeallogo from './assets/Zeallogo.jpeg'
 import zeallogo1 from './assets/Zeallogo2.png'
 import { NavLink } from 'react-router-dom'
 
