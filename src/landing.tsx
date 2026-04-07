@@ -625,13 +625,14 @@ function Nav() {
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
           {/*  */}
           <div className="rounded-2xl shadow-md">
-           <iframe className='w-full rounded-tl-2xl rounded-tr-2xl sm:h-[15rem]'  width="560" height="315" src="https://www.youtube.com/embed/nBdNbDNIwSc?si=q_ZlzrEd7_mLjqdZ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>            <p className='p-8 text-[17px] text-[#226666]'>Luxury Property Tours</p>
+           <iframe className='w-full rounded-tl-2xl rounded-tr-2xl sm:h-[15rem]'  width="560" height="315" src="https://www.youtube.com/embed/nBdNbDNIwSc?si=q_ZlzrEd7_mLjqdZ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>          
+             <p className='p-8 text-[17px] text-[#226666]'>Residence Walk through</p>
           </div>
           {/*  */}
 
           <div className="rounded-2xl shadow-md">
             <iframe className='w-full rounded-tl-2xl rounded-tr-2xl sm:h-[15rem]' width="560" height="315" src="https://www.youtube.com/embed/2iuh9exawfo?si=PTAJv5aTRmKWZmHA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
-            <p className='p-8 text-[17px] text-[#226666]'>Luxury Property With Kevin</p>
+            <p className='p-8 text-[17px] text-[#226666]'>Luxury Property With ZREC</p>
           </div>
           {/*  */}
 
@@ -643,7 +644,7 @@ function Nav() {
 
           <div className="rounded-2xl shadow-md ">
             <iframe className='w-full rounded-tl-2xl rounded-tr-2xl sm:h-[15rem]' width="560" height="315" src="https://www.youtube.com/embed/QW_E1imcQa8?si=tuX8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-            <p className='p-8 text-[17px] text-[#226666]'>Luxury Property Tours Saulltech</p>
+            <p className='p-8 text-[17px] text-[#226666]'>Luxury Property With ZREC</p>
           </div>
           {/*  */}
 
