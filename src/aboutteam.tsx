@@ -91,7 +91,7 @@ function aboutteam() {
 
 
         
-        <div className='mx-[5%] md:max-w-[50%]'>
+        <div className='mx-[5%] md:max-w-[100%]'>
             <h1 className='w-[100%] text-2xl pb-2  border-b py-6 font-forumSerif font-medium'>Meet The Team</h1>
             <div className='flex items-center pt-2'>
                 <NavLink className='!text-[#226666]' to='/'>Home  </NavLink>
@@ -100,19 +100,14 @@ function aboutteam() {
             </div>
 
             <h1 className='text-xl  mb-3  font-medium'>Management</h1>
-            <div className='sm:grid sm:grid-cols-2 sm:gap-4'>
+            <div className='sm:grid sm:grid-cols-2 md:grid-cols-4 sm:gap-4'>
                                 {/* single card */}
                                 <div className='text-center shadow-lg py-5 rounded-xl'>
                     <img className='rounded-lg w-[100%] h-[27rem]  md:h-[22rem]' src={olivia} alt="" />
                     <h2 className='pt-5 text-lg'>Nebeokike Olivia</h2>
                     <p className='text-[#226666] py-1 pb-5 text-sm font-normal'>CEO</p>
                     <div className='flex justify-center gap-4'>
-                        <a href="">
-                            <img className='bg-[#226666] p-2 rounded-xl' src={saulltechimg} alt="" />
-                        </a>
-                        <a href="">
-                            <img className='bg-[#226666] p-2 rounded-xl' src={saulltechphone} alt="" />
-                        </a>
+                        <p className='!text-[#C05050]'>Visionary leader driving innovation and growth, Olivia combines strategic insight with decisive execution, ensuring operational excellence, client satisfaction, and sustainable success across all real estate and management ventures.</p>
                     </div>
                 </div>
                 {/* single card */}
@@ -123,12 +118,9 @@ function aboutteam() {
                     <h2 className='pt-5 text-lg'>Paschaline Raymond</h2>
                     <p className='text-[#226666] py-1 pb-5 text-sm font-normal'>Marketing Manager</p>
                     <div className='flex justify-center gap-4'>
-                        <a href="">
-                            <img className='bg-[#226666] p-2 rounded-xl' src={saulltechimg} alt="" />
-                        </a>
-                        <a href="">
-                            <img className='bg-[#226666] p-2 rounded-xl' src={saulltechphone} alt="" />
-                        </a>
+                        <p className='!text-[#C05050]'>
+                            Creative and results-driven marketer, Paschaline crafts compelling campaigns, builds strong brand presence, attracts quality clients, and consistently delivers measurable growth through strategic and innovative outreach efforts.
+                        </p>
                     </div>
                 </div>
                 {/* single card */}
@@ -138,12 +130,9 @@ function aboutteam() {
                     <h2 className='pt-5 text-lg'>Chinecherem Samuel</h2>
                     <p className='text-[#226666] py-1 pb-5 text-sm font-normal'>Secretary</p>
                     <div className='flex justify-center gap-4'>
-                        <a href="">
-                            <img className='bg-[#226666] p-2 rounded-xl' src={saulltechimg} alt="" />
-                        </a>
-                        <a href="">
-                            <img className='bg-[#226666] p-2 rounded-xl' src={saulltechphone} alt="" />
-                        </a>
+                        <p className='!text-[#C05050]'>
+                           Highly organized and detail-oriented, Chinecherem ensures seamless communication, efficient scheduling, and accurate documentation, supporting smooth daily operations and maintaining professionalism across all administrative responsibilities. 
+                        </p>
                     </div>
                 </div>
                 {/* single card */}
@@ -154,12 +143,9 @@ function aboutteam() {
                     <h2 className='pt-5 text-lg'>Dyelshak Ishaku</h2>
                     <p className='text-[#226666] py-1 pb-5 text-sm font-normal'>Digital Operator</p>
                     <div className='flex justify-center gap-4'>
-                        <a href="">
-                            <img className='bg-[#226666] p-2 rounded-xl' src={saulltechimg} alt="" />
-                        </a>
-                        <a href="">
-                            <img className='bg-[#226666] p-2 rounded-xl' src={saulltechphone} alt="" />
-                        </a>
+                        <p className='!text-[#C05050]'>
+                            Tech-savvy and efficient, Dyelshak manages digital platforms with precision, ensuring smooth system operations, data accuracy, and enhanced online presence that supports business growth and client engagement.
+                        </p>
                     </div>
                 </div>
                 {/* single card */}
@@ -170,12 +156,9 @@ function aboutteam() {
                     <h2 className='pt-5 text-lg'>Nebeokike Brenda</h2>
                     <p className='text-[#226666] py-1 pb-5 text-sm font-normal'>Operational Manager</p>
                     <div className='flex justify-center gap-4'>
-                        <a href="">
-                            <img className='bg-[#226666] p-2 rounded-xl' src={saulltechimg} alt="" />
-                        </a>
-                        <a href="">
-                            <img className='bg-[#226666] p-2 rounded-xl' src={saulltechphone} alt="" />
-                        </a>
+                        <p className='!text-[#C05050]'>
+                            Dedicated and results-oriented, Brenda oversees daily operations efficiently, optimizes processes, ensures team coordination, and consistently delivers high standards of service in real estate and rent management activities.
+                        </p>
                     </div>
                 </div>
                 {/* single card */}
