@@ -15,6 +15,13 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons/faHeart'
 import zeallogo from './assets/Zeallogo.jpeg'
 import zeallogo1 from './assets/Zeallogo2.png'
 import { NavLink } from 'react-router-dom'
+import Olivia1 from './assets/Olivia1.jpeg'
+import Olivia2 from './assets/Olivia2.jpeg'
+import Olivia3 from './assets/Olivia3.jpeg'
+import Team1 from './assets/Team1.jpeg'
+import Team2 from './assets/Team2.jpeg'
+import Team3 from './assets/Team3.jpeg'
+import property1 from './assets/Property1.jpeg'
 
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import 'swiper/swiper.css'; // Import Swiper styles
@@ -511,7 +518,7 @@ function Nav() {
 
         <div className='grid gap-4 sm:grid-cols-2 md:grid-cols-4 mx-[5%] sm:mx-[1%] pt-6'>
           {/* singlecard */}
-          <div className="saleproperties h-[23rem] sm:h-[20rem] group overflow-hidden relative rounded-lg bg-cover bg-center  bg-[url('https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/popular-searches/2023/10/25/54039769-6f25-4ff2-b365-95b778887c85.jpg')]">
+          <div  style={{ backgroundImage: `url(${property1})` }}  className="saleproperties h-[23rem] sm:h-[20rem] group overflow-hidden relative rounded-lg bg-cover bg-center ">
             <div className='bg-[rgba(0,0,0,0.4)] hover:bg-[rgba(34,102,102,0.85)] h-[100%] px-8 pt-[12rem] sm:pt-[10rem] rounded-xl transition-all duration-150'>
               <h1 className='text-[1.5rem] mb-[2rem] opacity-80  group-hover:sm:mt-[0px] sm:mt-[2rem] transition-all duration-700'>Sale Properties</h1>
               <NavLink to='/buy' className='  hover:bg-white hover:text-black hover:opacity-75 transition-all duration-700 border rounded-lg py-2 px-5 uppercase block w-fit sm:absolute sm:bottom-[-3rem] group-hover:sm:bottom-[2rem]'>
@@ -521,7 +528,7 @@ function Nav() {
           </div>
           {/* singlecard */}
           {/* singlecard */}
-          <div className="saleproperties h-[23rem] sm:h-[20rem] group overflow-hidden relative rounded-lg bg-cover bg-center  bg-[url('https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/popular-searches/2023/10/25/b93972d2-a109-4e06-b045-8c10111f88fe.jpg')]">
+          <div style={{ backgroundImage: `url(${Team3})` }} className="saleproperties h-[23rem] sm:h-[20rem] group overflow-hidden relative rounded-lg bg-cover bg-center">
             <div className='bg-[rgba(0,0,0,0.4)] hover:bg-[rgba(34,102,102,0.85)] h-[100%] px-8 pt-[12rem]  sm:pt-[10rem] rounded-xl transition-all duration-150'>
               <h1 className='text-[1.5rem] mb-[2rem] opacity-80  group-hover:sm:mt-[0px] sm:mt-[2rem] transition-all duration-700'>Meet the Team</h1>
               <NavLink to='/contacts' className='  hover:bg-white hover:text-black hover:opacity-75 transition-all duration-700 border rounded-lg py-2 px-5 uppercase block w-fit sm:absolute sm:bottom-[-3rem] group-hover:sm:bottom-[2rem]'>
@@ -530,18 +537,18 @@ function Nav() {
             </div>
           </div>
           {/* singlecard */}
-          <div className="saleproperties h-[23rem] sm:h-[20rem] group overflow-hidden relative rounded-lg bg-cover bg-center  bg-[url('https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/popular-searches/2023/10/25/9708b692-ae02-43db-950c-3ebd85c85e94.jpg')]">
+          <div style={{ backgroundImage: `url(${Olivia1})` }} className="saleproperties h-[23rem] sm:h-[20rem] group overflow-hidden relative rounded-lg bg-cover bg-center ">
             <div className='bg-[rgba(0,0,0,0.4)] hover:bg-[rgba(34,102,102,0.85)] h-[100%] px-8 pt-[12rem]  sm:pt-[10rem] rounded-xl transition-all duration-150'>
               <h1 className='text-[1.5rem] mb-[2rem] opacity-80  group-hover:sm:mt-[0px] sm:mt-[2rem] transition-all duration-700'>Careers</h1>
               <a className=' hover:bg-white hover:text-black hover:opacity-75 transition-all duration-700 border rounded-lg py-2 px-5 uppercase block w-fit sm:absolute sm:bottom-[-3rem] group-hover:sm:bottom-[2rem]'>
-                View More
+                coming soon
               </a>
             </div>
           </div>
           {/* singlecard */}
           {/* singlecard */}
           {/* singlecard */}
-          <div className="saleproperties h-[23rem] sm:h-[20rem] group overflow-hidden relative rounded-lg bg-cover bg-center  bg-[url('https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/popular-searches/2023/10/25/ba08a505-e516-4aa1-bfe4-39827ecb7839.jpg')]">
+          <div style={{ backgroundImage: `url(${Team1})` }} className="saleproperties h-[23rem] sm:h-[20rem] group overflow-hidden relative rounded-lg bg-cover bg-center ">
             <div className='bg-[rgba(0,0,0,0.4)] hover:bg-[rgba(34,102,102,0.85)] h-[100%] px-8 pt-[12rem]  sm:pt-[10rem] rounded-xl transition-all duration-150'>
               <h1 className='text-[1.5rem] mb-[2rem] opacity-80  group-hover:sm:mt-[0px] sm:mt-[2rem] transition-all duration-700'>About Us</h1>
               <a className='  hover:bg-white hover:text-black hover:opacity-75 transition-all duration-700 border rounded-lg py-2 px-5 uppercase block w-fit sm:absolute sm:bottom-[-3rem] group-hover:sm:bottom-[2rem]'>
@@ -661,7 +668,7 @@ function Nav() {
         <div className='grid  sm:grid-cols-2 md:grid-cols-4 mx-[4%] gap-4'>
           {/*  */}
           <div className="rounded-2xl shadow-md ">
-            <img className='rounded-t-3xl h-[12rem] w-[100%]' src='https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/articles/2022/06/10/878f8a8a-c5ba-49c2-aa41-428877f5bd9a.jpg' alt="" />
+            <img  className='rounded-t-3xl h-[12rem] w-[100%]' src='https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/articles/2022/06/10/878f8a8a-c5ba-49c2-aa41-428877f5bd9a.jpg' alt="" />
             <h1 className='mb-3 pt-7 text-[17px]  leading-tight text-base text-left font-bold px-3'>5 Things Landlords should be doing by 2022</h1>
             <p className='text-left text-sm leading-none px-3'>LandlordHere are the 5 things that landlord should be doing by 2022. 1.  Marketing your</p>
             <button className='flex items-center mt-7 mx-3  text-[#226666]  py-3  text-center tracking-wide font-bold  rounded-lg opacity-90 '>Read More
