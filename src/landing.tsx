@@ -18,7 +18,6 @@ import { NavLink } from 'react-router-dom'
 import Olivia1 from './assets/Olivia1.jpeg'
 import bgmain from './assets/vu-anh-TiVPTYCG_3E-unsplash.jpg'
 import Team1 from './assets/Team1.jpeg'
-import Team2 from './assets/Team2.jpeg'
 import Team3 from './assets/Team3.jpeg'
 import property1 from './assets/Property1.jpeg'
 
