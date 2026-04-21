@@ -16,6 +16,7 @@ import zeallogo from './assets/Zeallogo.jpeg'
 import zeallogo1 from './assets/Zeallogo2.png'
 import { NavLink } from 'react-router-dom'
 import Olivia1 from './assets/Olivia1.jpeg'
+import bgmain from './assets/vu-anh-TiVPTYCG_3E-unsplash.jpg'
 import Olivia2 from './assets/Olivia2.jpeg'
 import Olivia3 from './assets/Olivia3.jpeg'
 import Team1 from './assets/Team1.jpeg'
@@ -172,11 +173,11 @@ function Nav() {
         />
         <h1 className='text-[8px] font-forumSerif mt-[-2rem] opacity-70'>SAULLTECH</h1> */}
       </div>
-      <main className=" h-screen pb-[15%] bg-center bg-cover w-[100%] bg-[url('https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/slides/2023/10/25/696c44fa-082c-414c-9222-a211b2f6bc83.jpg')]">
+      <main className=" h-screen pb-[15%] bg-center bg-cover w-[100%] opacity-1" style={{ backgroundImage: `url(${bgmain})` }} >
         <nav className={`flex justify-between px-[5%] sm:px-[3%] sm:pr-0  py-[1rem] items-center bg sm:py-[1rem] md:pt-0 md:pr-[5%] ${navmonitor}`}>
           <img className="w-[50%] sm:w-[30%] lg:w-[15%] h-[50%] md:w-[15%] md:pt-1 hidden" src='https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/logos/2022/08/17/34f7a0a9-8d33-4345-93ff-699c5611dfa4.png' alt="" />
           <img className="w-[50%] sm:w-[30%] lg:w-[15%] h-[50%] md:w-[15%] md:pt-1 hidden" src={zeallogo} alt="" />
-      <img className='opacity-50 w-[10%]' src={zeallogo1} alt="" />
+      <img className='opacity-80 w-[10%]' src={zeallogo1} alt="" />
 
 
 
@@ -188,26 +189,60 @@ function Nav() {
             </div>
 
 
-            <div className=' text-white w-[100%] text-[10px]  justify-between mt-2 hidden md:flex '>
-              <NavLink to='/buy?' className='block  opacity-90'>Buy</NavLink>
-              <NavLink to='/rent?' className='block opacity-90'>Rent</NavLink>
-              <NavLink to='/newbuilds?' className=' block  opacity-90'>New Builds </NavLink>
-              <NavLink to='/valuation?' className='block opacity-90'>Valuation</NavLink>
-              <NavLink to='/about?' className='block  opacity-90'>About</NavLink>
-              <NavLink to='/news?' className='block opacity-90'>News</NavLink>
-              <a href='#contactus' className='block opacity-90'>Contact </a>
-              <div className='w-[2rem] rounded-[50%] opacity-90 '>
-                <Flag className=' w-[100%] rounded-[10rem]' code="NG" height="50" width="50" />
-              </div>
-              <div className='flex items-center gap-3 opacity-90'>
-                <img src={saulltechprofile} alt="" />
-                <p className='font-bold'>Sign-in / Register</p>
-              </div>
-            </div>
-          </div>
+<div className=' text-white w-[100%] text-[10px] justify-between mt-2 hidden md:flex'>
+
+  <NavLink to='/buy?' className='relative group inline-block opacity-90 transition-all duration-300 transform group-hover:translate-y-[-2px] group-hover:text-white group-hover:font-semibold'>
+    Buy
+    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#aa3939] transition-all duration-300 group-hover:w-full"></span>
+  </NavLink>
+
+  <NavLink to='/rent?' className='relative group inline-block opacity-90 transition-all duration-300 transform group-hover:translate-y-[-2px] group-hover:text-white group-hover:font-semibold'>
+    Rent
+    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#aa3939] transition-all duration-300 group-hover:w-full"></span>
+  </NavLink>
+
+  <NavLink to='/newbuilds?' className='relative group inline-block opacity-90 transition-all duration-300 transform group-hover:translate-y-[-2px] group-hover:text-white group-hover:font-semibold'>
+    New Builds
+    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#aa3939] transition-all duration-300 group-hover:w-full"></span>
+  </NavLink>
+
+  <NavLink to='/valuation?' className='relative group inline-block opacity-90 transition-all duration-300 transform group-hover:translate-y-[-2px] group-hover:text-white group-hover:font-semibold'>
+    Valuation
+    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#aa3939] transition-all duration-300 group-hover:w-full"></span>
+  </NavLink>
+
+  <NavLink to='/about?' className='relative group inline-block opacity-90 transition-all duration-300 transform group-hover:translate-y-[-2px] group-hover:text-white group-hover:font-semibold'>
+    About
+    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#aa3939] transition-all duration-300 group-hover:w-full"></span>
+  </NavLink>
+
+  <NavLink to='/news?' className='relative group inline-block opacity-90 transition-all duration-300 transform group-hover:translate-y-[-2px] group-hover:text-white group-hover:font-semibold'>
+    News
+    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#aa3939] transition-all duration-300 group-hover:w-full"></span>
+  </NavLink>
+
+  <a href='#contactus' className='relative group inline-block opacity-90 transition-all duration-300 transform group-hover:translate-y-[-2px] group-hover:text-white group-hover:font-semibold'>
+    Contact
+    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#aa3939] transition-all duration-300 group-hover:w-full"></span>
+  </a>
+
+  {/* FLAG */}
+  <div className='w-[2rem] rounded-[50%] opacity-90 relative group inline-block transition-all duration-300 transform group-hover:translate-y-[-2px]'>
+    <Flag className='w-[100%] rounded-[10rem]' code="NG" />
+    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#aa3939] transition-all duration-300 group-hover:w-full"></span>
+  </div>
+
+  {/* SIGN IN */}
+  <div className='flex items-center gap-3 opacity-90 relative group inline-block transition-all duration-300 transform group-hover:translate-y-[-2px] group-hover:font-semibold'>
+    <img src={saulltechprofile} alt="" />
+    <p className='font-bold'>Sign-in / Register</p>
+    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#aa3939] transition-all duration-300 group-hover:w-full"></span>
+  </div>
+
+</div>          </div>
         </nav>
 
-        <div className={`bg-[#003333] text-white absolute w-[100%] px-[5%] text-lg md:hidden  ${navmonitor2}`}>
+        <div className={`bg-[#003333] text-white absolute w-[100%] px-[5%] text-lg md:hidden z-50  ${navmonitor2}`}>
           <NavLink to='/buy?' className='block py-2 opacity-70'>Buy</NavLink>
           <NavLink to='/rent?' className='block py-2  opacity-70'>Rent</NavLink>
           <NavLink to='/newbuilds?' className=' block py-2 opacity-70'>New Builds </NavLink>
@@ -225,19 +260,71 @@ function Nav() {
 
         </div>
 
+<div className="min-h-screen flex items-center justify-center px-4">
 
-        <div className='text-white text-center first-line: sm:h-[100%] sm:py-[5%]'>
-          <h1 className='border-b-[1px] py-6 md:w-[30rem] mt-[20%] sm:mt-0 mx-[auto] font-forumSerif  text-[1.4rem]  tracking-wider md:text-[2rem] md:font-thin'>Zeal Real Estate Company Ltd.....</h1>
+  {/* GLASS CONTAINER */}
+  <div className="backdrop-blur-lg bg-white/10 border border-white/20 shadow-2xl rounded-2xl px-6 py-10 md:px-12 md:py-14 max-w-[60rem] w-full text-white text-center">
 
-          <div className=" mx-[10%] grid grid-cols-1 gap-[2rem] sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-4 gap-x-4 gap-y-7  items-center md:items-start md:max-w-[50rem] pt-[1rem] md:mx-auto">
-            <NavLink to='/buy?' className='bg-[#aa3939] w-full whitespace-nowrap text-sm md:text-base text-center tracking-wide font-bold uppercase rounded-lg block transition-all py-3 cta md:px-6'>FOR SALE</NavLink>
-            < NavLink to='/rent?' className='bg-[#aa3939] w-full whitespace-nowrap text-sm md:text-base text-center tracking-wide font-bold uppercase rounded-lg block transition-all py-3 cta md:px-6 ' >FOR RENT</NavLink>
-            <NavLink to='/contacts?' className='bg-[#aa3939] w-full whitespace-nowrap text-sm md:text-base text-center tracking-wide font-bold uppercase rounded-lg block transition-all py-3 cta md:px-6 '>TEAM</NavLink>
-            < a href='#contactus' className='bg-[#aa3939] w-full whitespace-nowrap text-sm md:text-base text-center tracking-wide font-bold uppercase rounded-lg block transition-all py-3 cta md:px-6 '>CONTACT US</a>
+    {/* TITLE */}
+    <h1 className="font-forumSerif text-[1.6rem] md:text-[2.3rem] tracking-wide md:tracking-wider font-medium">
+      Zeal Real Estate Company Ltd.
+    </h1>
 
-          </div>
-        </div>
-      </main>
+    {/* TAGLINE */}
+    <p className="mt-3 text-sm md:text-base tracking-wide text-white/80">
+      Excellence in Every Property
+    </p>
+
+    {/* LINE */}
+    <div className="w-[50%] h-[1px] bg-white/40 mx-auto mt-5"></div>
+
+    {/* BUTTON GRID */}
+    <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-4">
+
+      <NavLink 
+        to="/buy"
+        className="bg-[#aa3939] w-full whitespace-nowrap text-sm md:text-base text-center tracking-wide font-bold uppercase rounded-lg block py-3 px-6 
+        transition-all duration-300 ease-in-out shadow-md
+        hover:bg-[#c05050] hover:scale-105 hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(170,57,57,0.6)]
+        active:scale-95"
+      >
+        FOR SALE
+      </NavLink>
+
+      <NavLink 
+        to="/rent"
+        className="bg-[#aa3939] w-full whitespace-nowrap text-sm md:text-base text-center tracking-wide font-bold uppercase rounded-lg block py-3 px-6 
+        transition-all duration-300 ease-in-out shadow-md
+        hover:bg-[#c05050] hover:scale-105 hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(170,57,57,0.6)]
+        active:scale-95"
+      >
+        FOR RENT
+      </NavLink>
+
+      <NavLink 
+        to="/contacts"
+        className="bg-[#aa3939] w-full whitespace-nowrap text-sm md:text-base text-center tracking-wide font-bold uppercase rounded-lg block py-3 px-6 
+        transition-all duration-300 ease-in-out shadow-md
+        hover:bg-[#c05050] hover:scale-105 hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(170,57,57,0.6)]
+        active:scale-95"
+      >
+        TEAM
+      </NavLink>
+
+      <a 
+        href="#contactus"
+        className="bg-[#aa3939] w-full whitespace-nowrap text-sm md:text-base text-center tracking-wide font-bold uppercase rounded-lg block py-3 px-6 
+        transition-all duration-300 ease-in-out shadow-md
+        hover:bg-[#c05050] hover:scale-105 hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(170,57,57,0.6)]
+        active:scale-95"
+      >
+        CONTACT US
+      </a>
+
+    </div>
+
+  </div>
+</div></main>
 
       <div className=' text-center px-[5%] bg-[#f3f4f4] pb-[7rem]'>
         <img className='w-[50%] inline-block my-[2.5rem] sm:w-[25%]' src='https://agentplus-s3.s3.eu-west-2.amazonaws.com/discover-agentplus/properties/2022/08/17/039efcbf-77da-4b43-8b46-9965b02f9ab5.png' alt="" />
